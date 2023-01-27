@@ -7,6 +7,7 @@ def export_to_json():
         data = f.readlines()
     with open('workers.json', 'w') as file:
         json.dump(data, file)
+    print('Экспорт прошел успешно!')
 
 
 # Экспортировать данные в формате csv
@@ -16,6 +17,7 @@ def export_to_csv():
     with open('workers.csv', 'w') as file:
         for line in data:
             file.write(f'{line}')
+    print('Экспорт прошел успешно!')
 
 
 # Нумерация списка сотрудников
